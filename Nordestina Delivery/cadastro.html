@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    
+</head>
+<body>
+
+  <header class="cabecalhoPrincipal">
+    <div class="container">
+        <h1 class="cabecalhoPrincipal-titulo">
+            <img src="./Img/Nordestina-Logo.png" alt="">
+        </h1>
+
+        <nav class="cabecalhoPrincipal-nav">
+            <a class="cabecalhoPrincipal-nav-link" href="index.html">Home</a>
+            <a class="cabecalhoPrincipal-nav-link" href="cardapio.html">Cardápio</a>
+            <a class="cabecalhoPrincipal-nav-link" href="contato.html">Contato</a>
+            <a class="cabecalhoPrincipal-nav-link" href="cadastro.html">Cadastro de Pratos</a>
+        </nav>
+    </div>
+
+</header>
+
+
+    <div class="container-form">  
+        <form id="contact" action="" method="post">
+          <h3>Cadastro de Pratos</h3>
+          <h4>Preencha as informações sobre o prato que deseja Cadsatrar</h4>
+          <fieldset>
+            <input placeholder="Tipo do Prato" type="text" tabindex="1" required autofocus>
+          </fieldset>
+
+          <fieldset>
+            <input placeholder="Nome Do Prato" type="text" tabindex="2" required>
+          </fieldset>
+
+          <fieldset>
+            <input placeholder="Valor do Prato(R$)" type="text" tabindex="3" required>
+          </fieldset>
+
+          <fieldset>
+            <input placeholder="Ingredientes do Prato" type="text" tabindex="4" required>
+          </fieldset>
+
+          <fieldset class="radio-tam">
+                <legend class="radio-legend">Qual o Tamanho da Porção?</legend> <!-- Dentro de FieldSets Não temos Parágrafos, mas sim LEGEND-->
+
+                <label for="radio-email"><input type="radio" name="tamanho" value="pequena" id="radio-pequena" class="item-radio">Pequena</label>
+
+                <label for="radio-telefone"> <input type="radio" name="tamanho" value="media" id="radio-media" class="item-radio">Média</label>
+
+                <label for="radio-whatsapp"><input type="radio" name="tamanho" value="Grande" id="radio-grande" checked class="item-radio">Grande</label>
+          </fieldset>
+
+          <fieldset>
+            <legend class="select-title">Qual Dia da Semana será Ofertado?</legend>
+            <select class="select-days-week">
+                <option value="segunda">Segunda-Feira</option>
+                <option value="terça">Terça-Feira</option>
+                <option value="quarta">Quarta-Feira</option>
+                <option value="quinta">Quinta-Feira</option>
+                <option value="sexta">Sexta-Feira</option>
+                <option value="sabado">Sábado</option>
+                <option value="domingo">Domingo</option>
+            </select>
+          </fieldset>
+
+          <fieldset>
+            <textarea placeholder="Descrição Adicional sobre o Prato...." tabindex="5" required></textarea>
+          </fieldset>
+
+          <fieldset>
+            <div class="form-submit-img">
+              <label for="fupload" class="control-label label-bordered">Cadastrar uma foto do Prato</label>
+              <input type="file" id="fupload" name="fupload" class="fupload form-control" />
+          </div>
+          </fieldset>
+
+          <fieldset>
+            <button name="enviar" type="submit" id="contact-submit" data-submit="...Enviando" >Cadastrar Prato</button>
+          </fieldset>
+
+        </form>
+      </div>
+
+      <footer>
+        <div class="footermaior">
+            <div class="leftfooter">
+                <img class="margintop marginright" src="./Img/logo-rodape.png" alt="LogoFooter">
+                <p class="p-footer-desc">O seu Restaurante Nordestino</p>
+                <p class="p-footer-desc">com mais de 50 anos de tradição.</p>
+            </div>
+
+            <div class="centerfooter">
+                <p class="fontefooter-central">HORÁRIOS</p>
+                <p class="p-footer-desc-horario"><strong>SEG À SEG<br>DAS 11H00 ÀS 15:30</strong></p>
+                <p class="fontefooter-central">CONTATOS</p>
+                <p class="p-footer-desc"><strong>(18)99680-71-24<br>(18)99614-0996</strong></p>
+            </div>
+
+            <div class="rightfooter">
+
+                <p><img src="./Img/ponto.webp" alt="" width="13px" height="13px"><a class="item-menu-rodape" href="index.html">Home</a></p>
+                <p><img src="./Img/ponto.webp" alt="" width="13px" height="13px"><a class="item-menu-rodape" href="cardapio.html">Cardápio</a></p>
+                <p><img src="./Img/ponto.webp" alt="" width="13px" height="13px"><a class="item-menu-rodape" href="#sobre">Sobre nós</a></p>
+                <p><img src="./Img/ponto.webp" alt="" width="13px" height="13px"><a class="item-menu-rodape" href="contato.html">Contato</a></p>
+
+                
+                <div class="follow-social-media">
+                    <p class="fontefooter-right">SIGA-NOS</p>
+                    <a href="https://www.instagram.com/unoeste" target="_blank"><img src="./Img/instagram.webp" alt="" width="48" height="48"></a>
+                    <a href="https://www.facebook.com/Unoeste/" target="_blank"><img src="./Img/face.webp" alt="" width="48" height="48"></a>
+                </div>
+                
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
